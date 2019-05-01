@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>My UX Project - Designing the Expert</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body id="project">
     <header>
-      <div>
+      <div><!--header container-->
           <a href="index.html"><img src="img/nav/logo.svg" alt="Maija Perfiljeva"></a>
           <nav>
             <ul>
@@ -18,16 +22,16 @@
       </div>
     </header>
     <main>
-      <div><!--Orange box for main content-->
-        <div><!--Yellow box: Project Intro-->
+      <div id="introduction"><!--Section: Project introduction-->
+        <div><!--Project introduction container-->
           <h1>The Expert</h1>
-              <div><!--Image-->
+                <div><!--container for image-->
                       <picture>
                         <source srcset="img/project/expert_cover-whitebg@600.jpg" media="(max-width:767px)">
                           <img src="img/project/expert_cover-whitebg@1200.jpg" alt="The Expert">
                         </picture>
-              </div>
-              <div><!--Text-->
+                </div>
+                <div><!--container for text-->
                       <p>
                         The project was part of the Career Foundry UX Design course. The goal of the project was to design a web app that would allow people to connect with an expert and pay for a video consultation.
                       </p>
@@ -40,19 +44,20 @@
                         <li>Usability testing</li>
                         <li>Design documentation</li>
                         <li>Visual design</li>
-                      </<ul>
-              </div>
-        </div><!--Project intro ends-->
-        <div><!--Yellow box: My Process-->
+                      </ul>
+                  </div>
+          </div><!--Project intro ends-->
+        </div><!--Project introduction section ends-->
+      <div id="process"><!--Section: My Process-->
+          <div><!--Container: My Process-->
               <h2>My Process</h2>
               <!--Research-->
-              <div><!--Picture - Research-->
+              <!--Picture - Research-->
                     <picture>
                         <source srcset="img/project/expert_survey@600.png" media="(max-width:767px)">
                         <img src="img/project/expert_survey@1200.png" alt="Survey results">
                     </picture>
-              </div>
-              <div><!--Description - Research-->
+              <!--Description - Research-->
                     <h3>Research</h3>
                       <p>
                         As a first step, I conducted a survey among the population matching my target demographics: 25 to 45 year old, gainfully employed people, who in the last 6 months looked an expert online. My goal was to explore trends, habits and pain points which I could examine closer in the interviews.
@@ -60,14 +65,12 @@
                       <p>
                       In the user interviews I wanted to dive deeper into the information I have gathered in the survey. I have conducted five 30-minute interviews with people who have recently searched for an expert online and who matched my target demographics. After the interviews, I've used affinity mapping to analyse interview findings.
                       </p>
-                </div>
-              <div><!--Picture - Research2-->
+              <!--Picture - Research2-->
                 <picture>
                   <source srcset="img/project/expert_affinity@600.jpg" media="(max-width:767px)">
                   <img src="img/project/expert_affinity@1200.jpg" alt="Fragment of the affinity map">
                 </picture>
-              </div>
-              <div><!--More text - Research2-->
+              <!--Description - Research2-->
                 <p>
                   Based on the information gathered from interviews, I have outlined the following points for my project:
                 </p>
@@ -80,15 +83,13 @@
                     <li>Keep in mind that users don't know how experts work or what they need.</li>
                     <li>Aim for clarity and trust by clearly communicating response times, prices and other relevant information.</li>
                   </ul>
-                </div>
               <!--Ideation-->
-              <div><!--Picture - Ideation-->
+              <!--Picture - Ideation-->
                 <picture>
                   <source srcset="img/project/expert_personas@600.jpg" media="(max-width:767px)">
                   <img src="img/project/expert_personas@1200.jpg" alt="User personas">
                 </picture>
-              </div>
-              <div><!--Description - Ideation-->
+              <!--Description - Ideation-->
                   <h3>Ideation</h3>
                   <p>
                     Based on research findings, I've created personas that represented my users:
@@ -99,28 +100,24 @@
                     <p>
                       In addition, I created user journeys to visualise an ideal interaction between each persona and the future web app. My goal at this stage was to transform the research findings into product development ideas that could be further refined and which would guide the design
                     </p>
-              </div>
               <!--Prototype-->
-              <div><!--Picture - Prototype-->
+              <!--Picture - Prototype-->
                 <picture>
                   <source srcset="img/project/expert_prototype_figma@600.jpg" media="(max-width:767px)">
                   <img src="img/project/expert_prototype_figma@1200.jpg" alt="Screenshot of the prorotype created in Figma">
                 </picture>
-              </div>
-              <div><!--Description - Prototype-->
+              <!--Description - Prototype-->
                   <h3>Prototype</h3>
                   <p>
                     Based on the ideas outlined, I started sketching out the screens for the "Expert". Working iteratively from pencil sketches and low-fidelity wireframes in Balsamiq, I've created a high-fidelity grayscale prototype in Figma for the mobile view. The prototype covered the essential user tasks such as searching for and booking an expert.
                   </p>
-              </div>
               <!--Usability Testing-->
-              <div><!--Picture - Usability testing-->
+              <!--Picture - Usability testing-->
                   <picture>
                     <source srcset="img/project/expert_test_report@600.png" media="(max-width:767px)">
                     <img src="img/project/expert_test_report@1200.png" alt="Excerpt from the usability test report">
                   </picture>
-              </div>
-              <div><!--Description - Usability testing-->
+              <!--Description - Usability testing-->
                   <h3>Usability Testing</h3>
                   <p>
                     With the prototype ready, it was time to put it for a test. My goal was to observe and evaluate how new users would engage with the “Expert” and complete essential tasks: finding an expert, booking a paid service and navigating their dashboard.
@@ -128,30 +125,27 @@
                   <p>
                     For the usability testing, I recruited 7 participants who matched my personas and target demographics. I conducted 30 to 45 minute usability tests using a mix of in-person and remote sessions. The sessions included practical scenarios and open-ended questions (test script and tasks can be seen here). Test outcomes were analysed using the rainbow spreadsheet and compiled into a test report.
                   </p>
-              </div>
               <!--Design-->
-              <div><!--Picture - Design-->
+              <!--Picture - Design-->
                   <picture>
                     <source srcset="img/project/expert_design_system@600.jpg" media="(max-width:767px)">
                     <img src="img/project/expert_design_system@1200.jpg" alt="Design System Excerpts">
                   </picture>
-              </div>
-              <div><!--Description - Design-->
+              <!--Description - Design-->
                   <h3>Design</h3>
                   <p>
                     To ensure that my UI elements looked and acted the same way everywhere, I conducted a brief UI inventory of my prototype and outlined my and design system. I outlined the look, feel, and behavior of elements such as cards, buttons and navigation items as well as documented accessibility principles which I followed in the design.
                   </p>
-              </div>
-        </div><!--My process ends-->
-        <div><!--Yellow box: Conclusion-->
-          <h2>Conclucion</h2>
-          <div><!--Content-->
-              <p>
+                </div><!--My process container ends-->
+      </div> <!--My process section ends-->
+      <div id="conclusion"><!--Section: Conclusion-->
+          <div><!--Container: conclusion-->
+            <h2>Conclusion</h2>
+            <p>
                 This project was a great learning journey for me. As I come from an instructional design background, I found a lot of overlaps between my old discipline and UX, in particular the focus on finding the best solution to a problem identified in the research and the importance of feedback and iterative development.
-              </p>
+            </p>
           </div>
         </div>
-      </div>
     </main>
     <footer id="contact">
       <div>
@@ -160,7 +154,7 @@
           Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+491234567">+49 1234567</a> or Skype me at <a href="skype:m_perfiljeva">m_perfiljeva</a>. Prefer sending an email?
         </p>
         <div>
-          <a href="mailto:contact@instructionaldesign.expert">Email me</a>
+          <a href="mailto:contact@instructionaldesign.expert" class="button email">Email me</a>
         </div>
         <div> <!-- linkedin-->
                 <a href="https://www.linkedin.com/in/mperfiljeva/" target="_blank"><svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="linkedin__x2C__social__x2C__media_x2C__icons_x2C_"><g><path d="M425.619,86.346C382.172,42.9,322.258,16.066,255.965,16.066    c-66.297,0-126.212,26.834-169.65,70.279c-43.452,43.442-70.286,103.359-70.286,169.652c0,66.292,26.834,126.211,70.286,169.654    c43.438,43.447,103.353,70.281,169.65,70.281c66.293,0,126.207-26.834,169.654-70.281    c43.443-43.443,70.277-103.362,70.277-169.654C495.896,189.705,469.063,129.788,425.619,86.346z M412.332,412.365    c-39.993,40.126-95.251,64.835-156.367,64.835c-61.121,0-116.379-24.709-156.372-64.835    c-40.117-39.984-64.831-95.252-64.831-156.367c0-61.111,24.714-116.377,64.831-156.365C139.586,59.509,194.844,34.8,255.965,34.8    c61.116,0,116.374,24.709,156.367,64.833c40.121,39.988,64.831,95.254,64.831,156.365    C477.163,317.113,452.453,372.381,412.332,412.365z" style="fill:#262626;"/><polygon points="145,258.257 145,363 198,363 198,249.621 198,218 145,218   " style="fill:#262626;"/><path d="M310.3,218.666c-21.657,0-36.269,9.334-42.378,18.334H266v-19h-39v29.627V363h44v-70.331    c0-18.87,1.816-37.066,24.938-37.066c23.242,0,23.063,21.518,23.063,38.392V363h44v-78.039c0-7.443,0.221-14.946-0.574-21.325    C359.105,236.27,347.236,218.666,310.3,218.666z" style="fill:#262626;"/><path d="M172.931,147.722c-13.949,0-25.244,11.293-25.244,25.244c0,13.952,11.295,25.242,25.244,25.242    c13.95,0,25.24-11.29,25.24-25.242C198.17,159.015,186.88,147.722,172.931,147.722z" style="fill:#262626;"/></g></g><g id="Layer_1"/></svg></a>
