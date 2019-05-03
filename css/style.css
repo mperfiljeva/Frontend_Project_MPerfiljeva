@@ -7,6 +7,7 @@ Primary color on black (White): #FFFFFF
 * {
   box-sizing: border-box;
 }
+
 /*
 Fonts and headings
 */
@@ -19,6 +20,7 @@ body {
   color: #333333;
   text-align: left;
 }
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -34,39 +36,41 @@ h2 {
   font-weight: 700;
   text-align: center;
 }
+
 h3 {
   font-size: 1.75em;
   font-weight: 700;
-  text-align: left;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
-  text-align: left;
 }
-
 
 /*
 Buttons and links
 */
-
 a {
   color: #DB1D0F;
   text-decoration: none;
 }
+
 a:visited {
   color: #4E2C3C;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: #DB1D0F;
   text-decoration: underline;
 }
+
 a:active {
   color: #333333;
   text-decoration: underline;
 }
+
 .button {
   display: inline-block;
   background-color: #DB1D0F;
@@ -78,32 +82,35 @@ a:active {
   border-radius: 50px;
   text-decoration: none;
   transition: 0.2s;
-  }
+}
+
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button:active {
   opacity: 0.8;
 }
+
 .button.email {
   background-color: #FFFFFF;
   color: #333333 !important;
   border: 2px solid #333333;
-  }
+}
+
 .button.email:hover {
   background-color: #DB1D0F;
   color: #FFFFFF !important;
   transition: 0.2s
 }
 
-  /*
+/*
   layout styling - general
   */
-
-  img {
-    width: 100%;
-  }
+img {
+  width: 100%;
+}
 
 header {
   background-color: #333333;
@@ -112,8 +119,8 @@ header {
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0px 6px 9px 0px rgba(46, 48, 46, 0.5);
-  -moz-box-shadow:    0px 6px 9px 0px rgba(46, 48, 46, 0.5);
-  box-shadow:         0px 6px 9px 0px rgba(46, 48, 46, 0.5);
+  -moz-box-shadow: 0px 6px 9px 0px rgba(46, 48, 46, 0.5);
+  box-shadow: 0px 6px 9px 0px rgba(46, 48, 46, 0.5);
 }
 
 .container {
@@ -129,32 +136,40 @@ header {
 .logo {
   max-width: 250px;
   padding: 10px;
-  text-indent: -9999px
+}
+
+header>a{
+  line-height: 0 !important;
 }
 
 nav {
   display: inline-block;
   width: 100%;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #FFFFFF !important;
 }
-nav > ul > li > a:hover {
+
+nav>ul>li>a:hover {
   opacity: 0.8;
   text-decoration: underline;
   transition: 0.2s;
 }
-nav > ul > li > a:active {
+
+nav>ul>li>a:active {
   opacity: 0.8;
 }
 
@@ -163,36 +178,40 @@ main {
 }
 
 footer {
- background-color: #333333;
- color: #FFFFFF;
- text-align: center;
- padding: 25px 0;
- margin: 25px auto 0 auto;
- width: 100%;
+  background-color: #333333;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px 0;
+  margin: 25px auto 0 auto;
+  width: 100%;
 }
-footer > .container > p > a {
+
+footer>.container>p>a {
   color: #FFFFFF !important;
   font-weight: 700;
 }
-footer > .container > p > a:hover {
+
+footer>.container>p>a:hover {
   opacity: 0.8;
   text-decoration: underline;
   transition: 0.2s;
 }
-footer > .container > p > a:active {
+
+footer>.container>p>a:active {
   opacity: 0.8;
 }
 
-.icon {
-  width: 60px;
-  height: 60px;
-}
 svg {
   fill: #FFFFFF;
 }
+
 svg:hover {
   fill: #DB1D0F;
   transition: 0.2s
+}
+
+.icon {
+  max-width: 60px;
 }
 
 .social {
@@ -208,11 +227,13 @@ Home Page - index.html
   display: inline-block;
   width: 100%;
 }
+
 #hero h1 {
   color: #FFFFFF;
   margin: 0;
   padding: 0.67em 0;
 }
+
 #hero p {
   color: #FFFFFF;
 }
@@ -227,6 +248,7 @@ About Me - about.html
 #me .row {
   padding-bottom: 15px;
 }
+
 #me .button {
   text-align: center !important;
 }
@@ -234,11 +256,10 @@ About Me - about.html
 /*
 The Expert - projects_expert.html
 */
-
 #process .step {
   padding-bottom: 25px;
   padding-top: 41px;
-  }
+}
 
 #conclusion {
   padding-bottom: 25px;
