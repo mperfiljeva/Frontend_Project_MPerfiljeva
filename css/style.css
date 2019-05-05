@@ -82,7 +82,7 @@ a:active {
   padding-right: 30px;
   border-radius: 50px;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -103,7 +103,7 @@ a:active {
 .button.email:hover {
   background-color: #DB1D0F;
   color: #FFFFFF !important;
-  transition: 0.2s
+  transition: 0.3s background-color;
 }
 
 /*
@@ -224,11 +224,15 @@ svg.icon {
   fill: #FFFFFF;
 }
 
-svg:hover {
+svg.icon:hover {
   fill: #DB1D0F;
-  transition: 0.2s
+  transition: 0.3s fill;
 }
 
+svg.animated {
+  max-width: 100%;
+  max-height: auto;
+}
 .icon {
   max-width: 60px;
 }
@@ -391,4 +395,13 @@ Large devices (1024px or larger)
    text-align: left;
    margin: 0;
 }
+}
+
+@keyframes color-change {
+  from {fill: #FFFFFF;}
+  to {fill: #DB1D0F;}
+}
+
+.big-heart {
+animation: 4s color-change infinite alternate linear;
 }
