@@ -13,12 +13,13 @@
 <body id="about">
   <header>
     <div class="container">
-      <a href="index.html"><img src="img/nav/logo.svg" alt="Maija Perfiljeva" class="logo"></a>
+      <!--header container-->
+      <a href="index.html"><img src="img/nav/logo.svg" alt="Maija Perfiljeva" class="logo" align="center"></a>
       <nav>
-        <ul class="topnav">
-          <li><a href="index.html" class="topnav">Work</a></li>
-          <li><a href="about.html" class="topnav">About</a></li>
-          <li><a href="#contact" class="topnav">Contact</a></li>
+        <ul>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +42,7 @@
         </picture>
         <div class="row">
           <!--row for two main columns-->
-          <div>
+          <div class="col-md-12 col-lg-7">
             <!--My story column-->
             <h2>My Story</h2>
             <p>
@@ -53,15 +54,15 @@
             <p>
               When I’m not learning or working, I host pen-and-paper roleplaying sessions, play board games and make desserts worth dying for.
             </p>
-            <p>And most importantly – I like cats.</p>
-            <a href="files/perfiljeva_cv2019.pdf" target="_blank" class="button">Download my CV</a>
+            <div class="button-wrapper"> <a href="files/perfiljeva_cv2019.pdf" target="_blank" class="button">Download my CV</a>
+            </div>
           </div>
-          <div>
+          <div class="col-md-12 col-lg-5">
             <!--Skills and tools column-->
             <h2>Skills and Tools</h2>
-            <div>
-              <!--Colum for rows (skills and tools)-->
-              <div class="row">
+            <div class="col-md-12 col-lg-skills">
+              <!--Column for rows (skills and tools)-->
+              <div class="col-md-6 row-lg-skills">
                 <!--Row: Relevenant skills-->
                 <h3>Relevant Skills</h3>
                 <ul>
@@ -72,13 +73,13 @@
                   <li>Usability testing</li>
                 </ul>
               </div>
-              <div class="row">
+              <div class="col-md-6 row-lg-skills">
                 <!--Row: Irrelevant skills-->
                 <h3>Tools I Use</h3>
                 <ul>
-                  <li><b>Prototyping:</b> Figma, InVision, Adobe XD</li>
-                  <li><b>E-learning:</b> Storyline, Camtasia</li>
-                  <li><b>Project and product management:</b> Jira, Asana</li>
+                  <li>Prototyping: Figma, InVision, Adobe XD</li>
+                  <li>E-learning: Storyline, Camtasia</li>
+                  <li>Project management: Jira, Asana</li>
                 </ul>
               </div>
             </div>
@@ -87,12 +88,12 @@
       </div>
     </div>
   </main>
-  <footer>
+  <footer id="contact">
     <div class="container">
       <!-- footer container -->
       <h2>Get in touch</h2>
       <p>
-        Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+491234567">+49 1234567</a> or Skype me at <a href="skype:m_perfiljeva">m_perfiljeva</a>. Prefer sending an email?
+        Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+491234567">+49 1234567</a> or Skype me at <a href="skype:m_perfiljeva">m_perfiljeva</a>.<span>Prefer sending an email?</span>
       </p>
       <div>
         <a href="mailto:contact@instructionaldesign.expert" class="button email">Email me</a>
@@ -114,7 +115,7 @@
             <g />
           </svg></a>
         <!--twitter-->
-        <a href="https://twitter.com/GamayunTraining" target="_blank"><svg class="icon" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+        <a href="https://twitter.com/GamayunTraining" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <g>
               <g>

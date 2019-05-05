@@ -47,6 +47,7 @@ h4 {
   font-weight: 400;
 }
 
+
 /*
 Buttons and links
 */
@@ -108,6 +109,12 @@ a:active {
 /*
   layout styling - general
   */
+
+span {
+    display: block;
+  }
+
+
 img {
   width: 100%;
 }
@@ -116,6 +123,7 @@ header {
   background-color: #333333;
   text-align: center;
   padding: 10px 0;
+  margin: auto;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0px 6px 9px 0px rgba(46, 48, 46, 0.5);
@@ -132,14 +140,25 @@ header {
 .row {
   margin: 25px 0;
 }
-
-.logo {
-  max-width: 250px;
-  padding: 10px;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-header>a{
+.logo {
+  max-width: 60px;
+}
+
+header>a {
   line-height: 0 !important;
+}
+
+header>.container>a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline;
 }
 
 nav {
@@ -157,7 +176,7 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 1em;
   text-transform: uppercase;
   font-weight: 700;
   color: #FFFFFF !important;
@@ -201,7 +220,7 @@ footer>.container>p>a:active {
   opacity: 0.8;
 }
 
-svg {
+svg.icon {
   fill: #FFFFFF;
 }
 
@@ -221,11 +240,13 @@ svg:hover {
 /*
 Home Page - index.html
 */
+
 #hero {
   background-color: #333333;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #hero h1 {
@@ -234,12 +255,21 @@ Home Page - index.html
   padding: 0.67em 0;
 }
 
+
 #hero p {
   color: #FFFFFF;
 }
 
 #work .row {
   padding-bottom: 25px;
+}
+
+#work h2 {
+  margin: 1.5em;
+}
+
+#work h3 {
+  margin-block-start: 0;
 }
 
 /*
@@ -263,4 +293,102 @@ The Expert - projects_expert.html
 
 #conclusion {
   padding-bottom: 25px;
+}
+
+/* small devices 320px and larger
+*/
+
+@media only screen and (min-width: 320px) {
+  #me .button-wrapper {
+      text-align: center;
+  }
+  }
+
+/*
+Medium devices (640px and larger)
+*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  nav {
+  width: auto;
+float: right;
+}
+main {
+  padding-top: 79px;
+}
+.col-md-12   {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.col-md-6 {
+  width: 50%;
+  text-align: left;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+#me h2 {
+  margin-bottom: 0;
+}
+#me .button-wrapper {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.col-md-12   {
+  width: 100%;
+  margin-bottom: 0;
+}
+}
+
+/*
+Large devices (1024px or larger)
+*/
+@media only screen and (min-width: 1024px) {
+.col-lg-8 {
+  width: 66.66%;
+  padding: 0 80px 0 0;
+}
+.col-lg-7 {
+  width: 58.33%;
+  padding-top: 0;
+}
+.col-lg-6 {
+  width: 50%;
+  float: left;
+  padding-top: 0;
+}
+.col-lg-5 {
+  width: 41.66%;
+  float: left;
+  padding: 0 0 0 20px;
+}
+.col-lg-4 {
+  width: 33.33%;
+  padding: 0 80px 0 0;
+}
+.col-lg-skills {
+  padding: 0;
+  margin: 0;
+}
+.row-lg-skills {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  padding-bottom: 10px;
+}
+#me h2 {
+  text-align: left;
+  margin-bottom: 1em;
+}
+#me h3 {
+  margin-top: 0;
+}
+#me .button-wrapper {
+   text-align: left;
+   margin: 0;
+}
 }
