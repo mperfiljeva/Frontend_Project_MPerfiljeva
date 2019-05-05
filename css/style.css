@@ -12,7 +12,7 @@ Primary color on black (White): #FFFFFF
 Fonts and headings
 */
 body {
-  background-color: #FFFFFF 90%;
+  background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -229,7 +229,6 @@ svg.icon:hover {
 
 svg.animated {
   max-width: 100%;
-  max-height: auto;
 }
 
 .icon {
@@ -270,7 +269,7 @@ Home Page - index.html
 }
 
 #work h3 {
-  margin-block-start: 0;
+  margin-top: 0;
 }
 
 /*
