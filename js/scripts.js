@@ -9,14 +9,18 @@ function checkWindowWidth() {
     }
 }
 
+
 function menuToggle() {
   var x = document.getElementById('mynavtoggle');
-if (x.className === 'navtoggle') {
-  x.className += ' responsive';
-} else {
-  x.className = 'navtoggle';
+  var width = $(window).width();
+  if (width >= 640) {}
+  else if (x.className === 'navtoggle')
+  {x.className += ' responsive';}
+  else {x.className = 'navtoggle';
+  }
 }
-}
+
+
 $(document).click(function(event) {
   $target = $(event.target);
   var x = document.getElementById('mynavtoggle');
