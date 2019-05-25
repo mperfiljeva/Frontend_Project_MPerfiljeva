@@ -118,7 +118,7 @@ span {
 
 header {
   background-color: #333333;
-  text-align: center;
+  /*text-align: center;*/
   padding: 10px 0;
   margin: auto;
   position: fixed;
@@ -168,18 +168,42 @@ header>.container>a {
   display: inline;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #FFFFFF;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li .menu {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-size: 30px;
+  padding-right: 0;
+}
+
+
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -200,7 +224,7 @@ nav>ul>li>a:active {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 60px;
 }
 
 footer {
@@ -347,6 +371,20 @@ Medium devices (640px and larger)
     float: right;
   }
 
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+nav>ul {
+  margin: 1em 0;
+}
+  nav>ul>li {
+    display: inline-block;
+  }
+
   main {
     padding-top: 79px;
   }
@@ -381,6 +419,7 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 */
 @media only screen and (min-width: 1024px) {
+
 
   .col-lg-8 {
     width: 66.66%;
