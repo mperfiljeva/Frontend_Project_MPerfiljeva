@@ -12,16 +12,19 @@ Primary color on black (White): #FFFFFF
 Fonts and headings
 */
 body {
-  background-color: #FFFFFF;
+  background-color: #FFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #333333;
+  color: #333;
   text-align: left;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -51,57 +54,64 @@ h4 {
 Buttons and links
 */
 a {
+  background-color: inherit;
   color: #DB1D0F;
   text-decoration: none;
 }
 
 a:visited {
+  background-color: inherit;
   color: #4E2C3C;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
+  background-color: inherit;
   color: #DB1D0F;
   text-decoration: underline;
 }
 
 a:active {
-  color: #333333;
+  background-color: inherit;
+  color: #333;
   text-decoration: underline;
 }
 
 .button {
   display: inline-block;
   background-color: #DB1D0F;
-  color: #FFFFFF !important;
+  color: #FFF !important;
   font-weight: 400;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
   transition: 0.2s opacity;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
+  color: inherit;
+  background-color: #DB1D0F;
   opacity: 0.8;
   text-decoration: none;
 }
 
 .button:active {
+  background-color: #DB1D0F;
+  color: #FFF;
   opacity: 0.8;
 }
 
 .button.email {
-  background-color: #FFFFFF;
-  color: #333333 !important;
-  border: 2px solid #333333;
+  background-color: #FFF;
+  color: #333 !important;
+  border: 2px solid #333;
 }
 
 .button.email:hover {
   background-color: #DB1D0F;
-  color: #FFFFFF !important;
+  color: #FFF !important;
   transition: 0.3s background-color;
 }
 
@@ -117,15 +127,15 @@ span {
 }
 
 header {
-  background-color: #333333;
-  /*text-align: center;*/
+  background-color: #333;
+  color: #FFF;
+
+  /* text-align: center; */
   padding: 10px 0;
   margin: auto;
   position: fixed;
   width: 100%;
-  -webkit-box-shadow: 0px 6px 9px 0px rgba(46, 48, 46, 0.5);
-  -moz-box-shadow: 0px 6px 9px 0px rgba(46, 48, 46, 0.5);
-  box-shadow: 0px 6px 9px 0px rgba(46, 48, 46, 0.5);
+  box-shadow: 0 6px 9px 0 rgba(46, 48, 46, 0.5);
 }
 
 .container {
@@ -136,7 +146,15 @@ header {
 
 .container-filled {
   background: #F4F4F4;
+  color: #333;
   padding: 20px;
+}
+
+.container-title {
+  background: #D9D5CC;
+  color: #333;
+  width: 100%;
+  min-height: 298px;
 }
 
 .button-wrapper {
@@ -145,6 +163,10 @@ header {
 
 .row {
   margin: 25px 0;
+}
+
+.row-top {
+  margin-top: 0;
 }
 
 .row::after {
@@ -157,18 +179,19 @@ header {
   max-width: 60px;
 }
 
-header>a {
+header > a {
   line-height: 0 !important;
 }
 
-header>.container>a {
+header > .container > a {
   margin: 0;
   padding: 0;
   border: 0;
   display: inline;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -180,13 +203,13 @@ header>.container>a {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #FFF;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -198,28 +221,27 @@ header>.container>a {
   padding-right: 0;
 }
 
-
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 1em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #FFFFFF !important;
+  background-color: #333 !important;
+  color: #FFF !important;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   opacity: 0.8;
   text-decoration: underline;
   transition: 0.2s;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   opacity: 0.8;
 }
 
@@ -228,31 +250,32 @@ main {
 }
 
 footer {
-  background-color: #333333;
-  color: #FFFFFF;
+  background-color: #333;
+  color: #FFF;
   text-align: center;
   padding: 25px 0;
-  margin: 25px auto 0 auto;
+  margin: 25px auto 0;
   width: 100%;
 }
 
-footer>.container>p>a {
-  color: #FFFFFF !important;
+footer > .container > p > a {
+  background-color: inherit;
+  color: #FFF !important;
   font-weight: 700;
 }
 
-footer>.container>p>a:hover {
+footer > .container > p > a:hover {
   opacity: 0.8;
   text-decoration: underline;
   transition: 0.2s;
 }
 
-footer>.container>p>a:active {
+footer > .container > p > a:active {
   opacity: 0.8;
 }
 
 svg.icon {
-  fill: #FFFFFF;
+  fill: #FFF;
 }
 
 svg.icon:hover {
@@ -276,7 +299,8 @@ svg.animated {
 Home Page - index.html
 */
 #hero {
-  background-color: #333333;
+  background-color: #333;
+  color: #FFF;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -284,13 +308,8 @@ Home Page - index.html
 }
 
 #hero h1 {
-  color: #FFFFFF;
   margin: 0;
   padding: 0.67em 0;
-}
-
-#hero p {
-  color: #FFFFFF;
 }
 
 #hero .container {
@@ -324,6 +343,23 @@ About Me - about.html
   text-align: center !important;
 }
 
+#me .button-wrapper {
+  text-align: center;
+}
+
+#about-experiment img {
+  width: auto;
+}
+
+#about-experiment .row-top {
+  text-align: center;
+  min-height: 298px;
+}
+
+#about-experiment .row {
+  margin-top: 0;
+}
+
 /*
 The Expert - projects_expert.html
 */
@@ -336,15 +372,11 @@ The Expert - projects_expert.html
   padding-bottom: 25px;
 }
 
-#me .button-wrapper {
-  text-align: center;
-}
-
 /* csv animation
   */
 @keyframes color-change {
   from {
-    fill: #FFFFFF;
+    fill: #FFF;
   }
 
   to {
@@ -355,8 +387,6 @@ The Expert - projects_expert.html
 .big-heart {
   animation: 4s color-change infinite alternate linear;
 }
-
-
 
 /*
 Medium devices (640px and larger)
@@ -369,24 +399,23 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
+    margin: 1em;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-.navtoggle li:last-child {
-  display: none;
-}
-nav>ul {
-  margin: 1em 0;
-}
-  nav>ul>li {
     display: inline-block;
   }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  /* nav > ul {
+    margin: 1em 0;
+  } */
+
   main {
-    padding-top: 79px;
+    padding: 79px 0 0;
   }
 
   .col-md-12 {
@@ -403,24 +432,12 @@ nav>ul {
     float: left;
     padding: 10px;
   }
-
-  #me .button-wrapper {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-
-  .container-filled {
-    padding: 20px;
-  }
 }
 
 /*
 Large devices (1024px or larger)
 */
 @media only screen and (min-width: 1024px) {
-
-
   .col-lg-8 {
     width: 66.66%;
     padding: 0 80px 0 0;
@@ -457,11 +474,10 @@ Large devices (1024px or larger)
   .row-lg-skills {
     width: 100%;
     text-align: left;
-    padding: 0;
-    padding-bottom: 10px;
+    padding: 0 0 10px;
   }
 
-    #me h2 {
+  #me h2 {
     text-align: left;
     margin-bottom: 1em;
   }
@@ -470,19 +486,27 @@ Large devices (1024px or larger)
     margin-top: 0;
   }
 
-  #me .button-wrapper {
-    text-align: left;
-}
   #me .col-lg-5 {
-      width: 41.66%;
-      float: left;
-      padding: 0;
-    }
+    width: 41.66%;
+    float: left;
+    padding: 0;
+  }
 
-  #me  .container-filled {
-      background: #F4F4F4;
-      padding: 20px;
-    }
+  #me .col-lg-7 {
+    padding-right: 60px;
+  }
 
+  #me .container-filled {
+    background: #F4F4F4;
+    color: #333;
+    padding: 20px;
+  }
+
+  .container-title > .container > .row-top > .col-lg-7 {
+    min-height: 298px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 298px;
+    padding-top: 80px;
   }
 }
