@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My UX Project - Rapid Design of a Flashcards Application</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!--header container-->
+      <div class="navtoggle" id="mynavtoggle">
+        <a href="index.html"><img src="img/nav/logo.png" alt="Maija Perfiljeva" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html#work">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <h1>Flashionary: UX Case Study</h1>
+      </div>
+    </div>
+    <div class="chapter" style="margin-top: 0;">
+      <div class="container">
+        <picture>
+          <source srcset="img/project/flashionary-title@600.png" media="(max-width:767px)">
+          <img src="img/project/flashionary-title-v2@1200.png" alt="Flashionary - final wireframes">
+        </picture>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="step">
+        <h3>Project</h3>
+        <p>
+          This project was part of the Certified UX Designer course with CareerFoundry that I completed in addition to a full-time job. The goal was to rapidly create and test a low-fidelity prototype for a mobile language-learning app, focusing on
+          flows for onboarding, account management and flashcard creation.
+        </p>
+        <p>
+          I worked on the project as a UX Design team of one and <span class="bold">my tasks</span> included:
+        </p>
+        <ul>
+          <li>Conducting competitive analysis and exploratory interviews</li>
+          <li>Creating a proto-persona</li>
+          <li>Creating user flows</li>
+          <li>Sketching and wireframing</li>
+          <li>Low-fidelity prototyping</li>
+          <li>Usability testing</li>
+        </ul>
+
+        <p><span class="bold">Tools used</span>: Balsamiq, Prott.</p>
+      </div>
+      <div class="step">
+        <div>
+          <h3>Challenge</h3>
+          <p>The project brief outlined the demographics of the target audience, essential product features and deliverables, which included low-fidelity prototype and wireframes. However, the brief did not have a problem statement that would define
+            the product's purpose or problem it would be solving. My challenge was to define the product's focus based on the exploratory research.</p>
+          <p>My personal challenge was the fact that this project was my first UX project and I had to complete it within a limited timeframe of around 40 hours from start to finish.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="chapter">
+      <div class="container">
+        <h2>Research</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step">
+        <h3>Competitive Analysis</h3>
+        <p>As my first step, I’ve looked at the existing apps with flashcards functionality and conducted a comparative analysis of existing products. To match the scope of research to the project timeframe, I focused on 3 apps:</p>
+        <ul>
+          <li>Ankidroid</li>
+          <li>Quizlet</li>
+          <li>Tinycards</li>
+        </ul>
+      </div>
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashionary-analysis@600.png" media="(max-width:767px)">
+          <img src="img/project/flashionary-analysis-small@1200.png" alt="Competitive analysis report">
+        </picture>
+        <div class="image-caption">
+          <p>During competitive analysis I focused on the specific tasks to identify strenghts and weaknesses of each competitor.</p>
+        </div>
+      </div>
+      <p>My <span class="bold">research goals</span> were to explore strenght and weaknesses of existing solutions and identify opportunities for my product.</p>
+      <p>Based on the analysis, I identified the following points to consider for this project:</p>
+      <ul>
+        <li>Balanced amount of options: providing users with too many options may increase frustration with app complexity.</li>
+        <li>Clear UI design and copy: while the scope of the project did not go beyond low-fidelity prototype, I felt it was necessary to keep this idea in mind from the start.</li>
+        <li>Easy card creation process: as analysis showed that it was possible to get some advantage over competition.</li>
+      </ul>
+
+      <div class="step">
+        <h3>User Interviews</h3>
+
+        <p>Equipped with knowledge about competitiors and their strenghts and weaknesses, I moved on to user research and scheduled interviews with 5 respondents matching the following criteria:</p>
+
+        <ul>
+          <li>Within age group specified by the project brief (25 to 45 years old).</li>
+          <li>In the last 6 months used an app to learn new vocabulary (ideally, in the context of foreign language).</li>
+        </ul>
+        <p>
+          The goals of my interviews were to understand the following:
+        </p>
+        <ul>
+          <li>Why do users learn language or vocabulary? What is the bigger goal that they are pursuing?</li>
+          <li>Which contexts are they using their learning apps in? Home, school or on the go?</li>
+          <li>What are the most common pain points?</li>
+          <li>What helps users reach their goals?</li>
+        </ul>
+        <p>
+          I’ve summarized interview notes and recordings in the “Doing, Thinking, Feeling” format to present the findings in the structured form. Please note that in the example below all sensitive information has been blanked out and the name of the
+          participant has been changed to preserve their privacy.
+        </p>
+      </div>
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashionary-interview-blurred@600.png" media="(max-width:767px)">
+          <img src="img/project/flashionary-interview-blurred@1200.png" alt="Example of the processed interview notes">
+        </picture>
+        <div class="image-caption">
+          <p>Interview notes structured in "Doing, Thinking, Feeling" format.</p>
+        </div>
+      </div>
+      <div class="step">
+        <h3>Findings</h3>
+        <p>The main highlights were:</p>
+        <ul>
+          <li>The respondents learned the language for specific purposes, predominantly to advance further in their work.</li>
+          <li>Creating flashcards was a big pain point.</li>
+          <li>Switching between multiple devices was a challenge as well.</li>
+          <li>New users valued clarity of features over their quantity.</li>
+          <li>Speed and low effort were highly important as respondents were busy individuals balancing work and learning.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="container">
+        <h2>Conceptualisation</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step">
+        <h3>Persona and Problem Statement</h3>
+        <p>Based on the interviews, I decided to focus my project on a specific user persona: Vesna, a busy young professional who moved to a different country and was taking part in a language course to further advance her career. Learning
+          vocabulary with flashcards was important for Vesna, but she struggled with the effort needed to create and manage flashcards using options available to her.</p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashionary-persona@600.png" media="(max-width:767px)">
+          <img src="img/project/flashionary-persona@1200.png" alt="User persona">
+        </picture>
+        <div class="image-caption">
+          Proto-persona for Vesna.
+        </div>
+      </div>
+
+      <div class="step">
+        <p>In addition, I have formulated a problem statement to address with my prototype:</p>
+        <p class="bold">Vesna needs a way to quickly transform long lists of words into flashcards so that she can have more free time and energy for learning.</p>
+      </div>
+
+      <div class="step">
+        <h3>Concept</h3>
+        <p>However, the question was — how could this be achieved? Based on the information from the interviews and my own observations made during an intensive language course, I have noticed that language learners used a dictionary (usually an
+          online one) to look up a word, then wrote down the translation in their notes, and later, at home, would attempt to turn these notes into flashcards. This caused a lot of frustration as it required a lot of manual work:</p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashionary-task-analysis-long@600.png" media="(max-width:767px)">
+          <img src="img/project/flashionary-task-analysis-long@1200.png" alt="Task analysis">
+        </picture>
+      </div>
+
+      <div class="step">
+        <p>
+          From my competitive analysis I’ve concluded that flashcard apps are focusing on the last step of this process and cannot directly address the need of Vesna. I decided that a much shorter process was needed and decided to create a concept of
+          an app to allow learners like Vesna make flashcards directly from the dictionary. And so, the “Flashionary” concept was born:
+        </p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashionary-task-analysis-short@600.png" media="(max-width:767px)">
+          <img src="img/project/flashionary-task-analysis-short@1200.png" alt="Improved user journey">
+        </picture>
+        <div class="image-caption">
+          "Flashionary" would become a single app for looking up words and turning them into flashcards.
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="container">
+        <h2>Iteration</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step">
+        <h3>Ideating and Sketching</h3>
+        <p>With user persona and problem statement defined, I formulated user stories for my prototype. Then, I created user flows to better understand the feasibility of my solution. Based on the user flows, I did “sketchstorming” – brainstorming
+          ideas using sketches.</p>
+
+        <p>To stay within the timeframe of my project, I timeboxed my sketching process and focused on capturing ideas rather than on artistic perfection. In the end, I clustered my sketches around parts of the user flow and selected the ones that I
+          felt were the best.</p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashionary-sketchstorming@600.png" media="(max-width:767px)">
+          <img src="img/project/flashionary-sketchstorming@1200.png" alt="Ideation: clustered sketches">
+        </picture>
+      </div>
+
+      <div class="step">
+        <h3>Low-Fidelity Wireframes</h3>
+        <p>In the next step, I fleshed out the selected sketches to create low-fidelity wireframes for the usability testing. To save time on re-drawing screens, I used sticky notes to create dynamic UI elements, such as dropdowns, selectors or
+          pop-ups. This technique also helped with correcting occasional mistakes (such as writing a wrong label on a button…). </p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashinary-wireframing@600.png" media="(max-width:767px)">
+          <img src="img/project/flashinary-wireframing@1200.png" alt="Wireframing in process">
+        </picture>
+      </div>
+
+
+      <div class="step">
+        <h3>Prototype</h3>
+        <p>With the wireframes ready, my next step was to put them to the test. Since speed was of the essence, I have used Prott app to compile photos of wireframes into an interactive low-fidelity prototype. You can see the original prototype <a
+            href="https://prottapp.com/p/9c619b#/s/5b43a0dc4942fb49cbd28e15">here</a>.</p>
+      </div>
+
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/flashionary-prototype@600.jpg" media="(max-width:767px)">
+          <img src="img/project/flashionary-prototype@1200.jpg" alt="Prototype in Prott">
+        </picture>
+        <div class="image-caption">
+          Screenshot from the Prott app showing the low-fidelity screens.
+        </div>
+      </div>
+
+
+      <div class="step">
+        <h3>Usability Testing</h3>
+        <p>My goal was to test the essential “Flashionary” functions, such as finding a word in a dictionary, creating a flashcard and completing a study mode. I recruited participants who matched my persona and conducted in-person test sessions
+          using the prototype in Prott and a mobile phone. The sessions included short scenarios replicating situations in which users would likely engage with the “Flashionary”.</p>
+
+        <p>Overall, participants were excited about the Flashionary. In addition to positive verbal feedback I could note a lot of engagement with the app. In addition, the sessions uncovered opportunities for improvement. To document and prioritise
+          the issues, I have used Jacob Nielsen’s error severity rating scale.</p>
+
+        <div class="step">
+          <picture>
+            <source srcset="img/project/usability-report@600.svg" media="(max-width:767px)">
+            <img src="img/project/usability-report@1200.svg" alt="Excerpt from the usability test report">
+          </picture>
+          <div class="image-caption">
+            Excerpt from the usability test report.
+          </div>
+        </div>
+
+        <div class="step">
+          <p>The main issues I would note were:</p>
+
+          <ul>
+            <li>Lack of clarity between “sign in” and “sign up” buttons.</li>
+            <li>Unclear “Set” feature (a way to group, sort and store cards).</li>
+            <li>Confusing UI of the “Study” mode.</li>
+          </ul>
+        </div>
+
+        <div class="step">
+          <h3>Further Iteration</h3>
+          <p>As the final step of this project, I’ve used Balsamiq to create wireframes with implemented changes. While I was still in the low-fidelity stage, it was important to start communicating the ideas in a more orderly format.</p>
+        </div>
+        <div class="step">
+          <picture>
+            <source srcset="img/project/flashionary-before-after@600.png" media="(max-width:767px)">
+            <img src="img/project/flashionary-before-after@1200.png" alt="Iterative development">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="chapter">
+      <div class="container">
+        <h2>Conclusion</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="step">
+        <h3>Summary</h3>
+        <p>This project was a great opportunity to experience rapid prototyping and quick proof-of-concept testing. Coming from the instructional design background, I was happy that my approach to iterative e-learning development helped me complete
+          this project on time and to the expected level of deliverables. </p>
+
+        <p>At the same time, it showed me the value of gathering early user feedback on a low-fidelity product. At the end of this project I was quite confident that my idea was on the right track and already received input about further
+          improvements.</p>
+
+        <p>Overall, this was a great learning experience and an interesting journey.</p>
+      </div>
+    </div>
+
+  </main>
+  <footer id="contact">
+    <div class="container">
+      <!-- footer container -->
+      <h2>Get in touch</h2>
+      <p>
+        Do you like my work and want to discuss opportunities? Please get in touch.
+      </p>
+      <div>
+        <a href="mailto:contact@instructionaldesign.expert" class="button email">Email me</a>
+      </div>
+      <div class="social">
+        <!-- linkedin-->
+        <a href="https://www.linkedin.com/in/mperfiljeva/" target="_blank"><svg class="icon" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <g>
+                <path
+                  d="M425.619,86.346C382.172,42.9,322.258,16.066,255.965,16.066    c-66.297,0-126.212,26.834-169.65,70.279c-43.452,43.442-70.286,103.359-70.286,169.652c0,66.292,26.834,126.211,70.286,169.654    c43.438,43.447,103.353,70.281,169.65,70.281c66.293,0,126.207-26.834,169.654-70.281    c43.443-43.443,70.277-103.362,70.277-169.654C495.896,189.705,469.063,129.788,425.619,86.346z M412.332,412.365    c-39.993,40.126-95.251,64.835-156.367,64.835c-61.121,0-116.379-24.709-156.372-64.835    c-40.117-39.984-64.831-95.252-64.831-156.367c0-61.111,24.714-116.377,64.831-156.365C139.586,59.509,194.844,34.8,255.965,34.8    c61.116,0,116.374,24.709,156.367,64.833c40.121,39.988,64.831,95.254,64.831,156.365    C477.163,317.113,452.453,372.381,412.332,412.365z" />
+                <polygon points="145,258.257 145,363 198,363 198,249.621 198,218 145,218" />
+                <path
+                  d="M310.3,218.666c-21.657,0-36.269,9.334-42.378,18.334H266v-19h-39v29.627V363h44v-70.331    c0-18.87,1.816-37.066,24.938-37.066c23.242,0,23.063,21.518,23.063,38.392V363h44v-78.039c0-7.443,0.221-14.946-0.574-21.325    C359.105,236.27,347.236,218.666,310.3,218.666z" />
+                <path d="M172.931,147.722c-13.949,0-25.244,11.293-25.244,25.244c0,13.952,11.295,25.242,25.244,25.242    c13.95,0,25.24-11.29,25.24-25.242C198.17,159.015,186.88,147.722,172.931,147.722z" />
+              </g>
+            </g>
+            <g />
+          </svg></a>
+        <!--twitter-->
+        <a href="https://twitter.com/GamayunTraining" target="_blank"><svg class="icon" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <g>
+                <path
+                  d="M425.619,86.28C382.172,42.97,322.258,16.004,255.965,16.004    c-66.297,0-126.212,26.966-169.65,70.276c-43.452,43.445-70.286,103.492-70.286,169.789c0,66.156,26.834,126.212,70.286,169.65    c43.438,43.311,103.353,70.276,169.65,70.276c66.293,0,126.207-26.966,169.654-70.276c43.443-43.438,70.277-103.494,70.277-169.65    C495.896,189.772,469.063,129.726,425.619,86.28z M412.332,412.438c-39.993,39.988-95.251,64.83-156.367,64.83    c-61.121,0-116.379-24.842-156.372-64.83c-40.117-39.989-64.831-95.389-64.831-156.368c0-61.113,24.714-116.514,64.831-156.502    c39.993-39.993,95.251-64.7,156.372-64.7c61.116,0,116.374,24.707,156.367,64.7c40.121,39.988,64.831,95.389,64.831,156.502    C477.163,317.049,452.453,372.448,412.332,412.438z"
+                  style="fill-rule:evenodd;clip-rule:evenodd;" />
+                <path
+                  d="M371.813,161.608c-9.7,5.711-20.593,9.83-32.015,12.088    c-9.048-9.693-22.188-15.675-36.805-15.675c-27.634,0-50.224,22.188-50.224,49.419c0,3.987,0.672,7.709,1.467,11.298    c-41.848-1.995-78.917-21.658-103.631-51.684c-4.25,7.44-6.904,15.812-6.904,24.845c0,17.271,9.88,32.415,23.163,41.186    c-8.233-0.133-16.865-2.395-21.865-6.113c0,0.267,0,0.399,0,0.664c0,6.377,0.35,12.225,2.602,17.802    c6.119,15.549,19.646,27.236,36.519,30.558c-4.391,1.197-8.853,1.855-13.5,1.855c-3.189,0-6.484-0.397-9.546-1.061    c6.516,19.666,24.927,34.013,46.854,34.543c-17.276,13.286-38.822,21.122-62.339,21.122c-4.126,0-7.985-0.265-12.102-0.662    c22.315,13.949,48.748,22.188,77.049,22.188c78.518,0,126.765-54.341,139.38-110.803c2.267-10.093,3.082-20.058,3.082-29.889    c0-2.127,0-4.382,0-6.378c10-7.041,18.574-15.812,25.219-25.642c-8.906,3.856-18.483,6.513-28.714,7.838    C360,182.866,368.085,173.298,371.813,161.608z"
+                  style="fill-rule:evenodd;clip-rule:evenodd;" />
+              </g>
+            </g>
+            <g />
+          </svg></a>
+      </div>
+      <p>
+        &copy; Maija Perfiljeva 2019
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

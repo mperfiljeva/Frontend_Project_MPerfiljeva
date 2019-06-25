@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Frontend Project - Developing a Portfolio Website</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!--header container-->
+      <div class="navtoggle" id="mynavtoggle">
+        <a href="index.html"><img src="img/nav/logo.png" alt="Maija Perfiljeva" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html#work">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="container">
+        <h1>Portfolio Website: Case Study</h1>
+      </div>
+    </div>
+    <div class="chapter" style="margin-top: 0;">
+      <div class="container">
+        <h2>Project</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="step">
+        <h3>Overview</h3>
+        <p>
+          I started this project as part of the CareerFoundry “Frontend Development for Designers” course. My goal was to take existing wireframes and create a functioning portfolio website to showcase my projects and skills as a UX Designer with
+          coding skills. In this project I went from writing a basic HTML structure to usability testing, quality assurance and publishing the website using static hosting in AWS S3 bucket. </p>
+
+        <p>During the project I have learned a lot about HTML and CSS, as well as basics of JavaScript. Overall, it was a great learning experience, not only in terms of learning to code, but also understanding how designs and codes can work
+          together, the importance of grids and design systems not only for designers, but developers as well. </p>
+        <p>
+          I worked on the project as a team of one and <span class="bold">used the following tools</span>:
+        </p>
+        <ul>
+          <li>Atom (including linter packages)</li>
+          <li>GitHub Desktop</li>
+          <li>AWS S3</li>
+          <li>Cloudflare</li>
+          <li>Crossbrowsertesting.com</li>
+        </ul>
+
+      </div>
+      <div class="step">
+        <div>
+          <h3>Context and Challenge</h3>
+          <p>As part of the UX Certification program with CareerFoundry, I chose to take up the “Frontend Development for Designers” specialization. I had a very basic knowledge about HTML and wanted to improve and modernize it. While I wasn’t
+            counting on becoming an actual Frontend Developer, I hoped that the course would give me knowledge needed to understand the developers’ perspective as well as design and prototype products with a solid comprehension of technical
+            possibilities and limitations.</p>
+          <p>As the course project focused on developing a portfolio website, I also saw this as an excellent opportunity to create on the real product, which would help me showcase my achievements and skills as an aspiring UX Designer.</p>
+          <p class="bold">In short, my challenge was: how can I with a minimum amount of knowledge and skill build a responsive portfolio website in under 60 hours?</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="chapter">
+      <div class="container">
+        <h2>Process</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step">
+        <h3>Design</h3>
+        <p>The project brief focused on three main parts of a portfolio site:</p>
+        <ul>
+          <li>Main Page</li>
+          <li>About me</li>
+          <li>Case study pages for each project</li>
+        </ul>
+        <p>The brief also included the low-fidelity wireframes suggesting layout options for all three pages, including desktop, tablet and mobile options. In the interest of saving time, I decided to lean on existing wireframes to have more time for
+          creating assets and developing the website itself.</p>
+
+        <p>As I have already started working on a portfolio content prior to this project, I have used my notes from portfolio example research where I’ve looked at their content and structure. In addition, I’ve looked into user personas for my
+          portfolio: recruiters, hiring managers and colleagues.</p>
+        <p>Keeping this information in mind helped me select the content necessary for the portfolio and its format. </p>
+      </div>
+
+      <div class="step">
+        <h3>Development</h3>
+
+        <p>With the goal outlined, I started development by creating texts and images first. For images, I needed to keep in mind mobile vs. desktop sizes and proportions. At first, I simply created smaller versions of the desktop images for mobile,
+          but with time, as my project was taking shape, I replaced them with images purposefully made for smaller screens.</p>
+
+        <p>In addition, I’ve identified the color scheme I could use and checked it for accessibility before committing. Having designed accessible training products in the past, I found that thinking about accessibility before development can save
+          considerable time and effort down the road.</p>
+
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/portfolio-fonts@600.png" media="(max-width:767px)">
+          <img src="img/project/portfolio-fonts@1200.png" alt="Typography and colours">
+        </picture>
+      </div>
+
+      <div class="step">
+
+        <p>With the assets and styling ready, I’ve used Atom to write the code. I’ve saved my work on GitHub, which was quite useful for going back in time when things didn’t go as well as planned…</p>
+
+        <p>I started off by creating a basic HTML structure and later applying CSS styling and media queries. As a final touch, I’ve used JQuery to create an adaptive navigation menu for mobile view:</p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/portfolio-menu@600.png" media="(max-width:767px)">
+          <img src="img/project/portfolio-menu@1200.png" alt="Desktop and mobile navigation menu">
+        </picture>
+      </div>
+
+      <div class="step">
+
+        <p>
+          During the development I relied on feedback from my mentor and a lot of self-study: StackOveflow and W3School were my go-to resources for many questions. In addition, I experimented with the Chrome “inspect” mode to see the effect of
+          changes. This helped me to experiment before committing changes to code and understand the meanining and impact of element properties.
+        </p>
+        <p>
+          Overall, I was surprised how easy it was to start creating a website on your own. While I know that I touched upon very basics of frontend development, I realized that now I can better understand the structure and code of websites. In
+          addition, the project helped me understand the concept of the grids and the benefit of reusable layout patterns and objects (such as buttons).
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Usability Test</h3>
+        <p>With the MVP of my portfolio done, I’ve conducted a short usability study. Due to participants’ availability, I wasn’t able to recruit representatives of all three personas and feedback from the study was limited to perspectives of hiring
+          managers and peers. This is something that I am planning to address at a later stage.</p>
+
+        <p>To analyze the findings, I’ve used Jakob Nielsen’s rating scale to classify all issues. I was quite pleased to see that no usability catastrophes were uncovered and that participants completed all tasks included in the test script.</p>
+
+        <p>The top 5 issues I have identified were:</p>
+        <ul>
+          <li>Navbar item “Work” was confusing. Participants didn’t expect that it would lead to the section “Project” on the main page, and some associated this word with “Employment”.</li>
+          <li>The images on “About me” and project case study pages were seen as “too big”. Respondents expected to see some text together with images when loading the page for the first time.</li>
+          <li>Page layout for case studies needed clearer structure.</li>
+          <li>Images on the landing were perceived as having different size and style.</li>
+          <li>5. Skype information was deemed too personal and irrelevant.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="container">
+        <h2>Further Iterations</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step">
+        <h3>Solution</h3>
+        <p>In the end, my portfolio included the following pages:</p>
+        <ul>
+          <li>“Projects” page (main page) from which visitors could access project case studies.</li>
+          <li>“About me” page, with information about myself and link to my downloadable resume.</li>
+          <li>Several case study pages, describing each project in more details.</li>
+        </ul>
+        <p>Following testing and feedback, I have made several improvements to the page layout and content.</p>
+      </div>
+
+      <div class="step">
+        <h3>Main Page</h3>
+        <p>Based on feedback, I have updated the project images on the landing page to appear more uniform.</p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/portfolio-before-after-02@600.png" media="(max-width:767px)">
+          <img src="img/project/portfolio-before-after-02@1200.png" alt="Landing page changes">
+        </picture>
+        <div class="image-caption">
+          More consistency in style and sizing was needed.
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>About Me Page</h3>
+        <p>Original wireframes featured a large image under the heading, hiding most of the content under the fold. Based on feedback, I reduced the image height so that pertinent content could be seen above the fold.</p>
+      </div>
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/portfolio-before-after-03@600.png" media="(max-width:767px)">
+          <img src="img/project/portfolio-before-after-03@1200.png" alt="About me changes">
+        </picture>
+        <div class="image-caption">
+          Reduced image height.
+        </div>
+      </div>
+
+      <div class="step">
+        <h3>Case Study Pages</h3>
+        <p>I improved the layout suggested in the original wireframes by placing the images after the relevant text (rather than before it). In addition, I added a background color to section headings signifying bigger phases of each project. With
+          this change the case study pages should be easier to scan and understand at a glance. </p>
+      </div>
+
+
+      <div class="step">
+        <picture>
+          <source srcset="img/project/portfolio-before-after-01@600.png" media="(max-width:767px)">
+          <img src="img/project/portfolio-before-after-01@1200.png" alt="Improved user journey">
+        </picture>
+        <div class="image-caption">
+          In addition to text changes, I added gray section and moved images after the relevant text to ensure smoother flow.
+        </div>
+      </div>
+
+      <div class="step">
+        <p>As you will most likely notice, I have also made changes to the overall colour scheme. While the respondents appreciated the high contrast the original design had, it was perceived as "gloomy" and "emo", which didn't correspond to the
+          impression I wanted to provide. Since my portfolio includes variety of images in different styles and colours, I wanted to keep the simple and neutral colours of my original colour scheme, to avoid upstaging the case study content. </p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="container">
+        <h2>Conclusion</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step">
+        <h3>Code Review</h3>
+        <p>As a final step, I conducted code review using linters in Atom and manually checked the website for cross-browser compatibility. I’ve outlined several brief manual test cases and carried them out in different browsers. I used <a
+            href="http://app.crossbrowsertesting.com">CrossBrowserTesting</a> for browsers I didn’t have direct access to.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step">
+        <h3>Summary and Next Steps</h3>
+        <p>I am pleased to say that my website is up and running. As a hosting solution, I used an AWS S3 bucket set to allow static website hosting. I have also purchased a domain that I pointed to AWS via CloudFlare thus
+          also enabling SSL. First I used AWS Route 53 for this, but immediately learned that this option does not support SSL, unless I engage another AWS Service. So I followed the path of the least resistance (and less running costs) and opted
+          out
+          for S3 and CloudFlare combination.</p>
+        <p>Overall, while this project did not make me a full front-end developer (and neither am I aiming to become one, at least for now) I am pleased with the result and the new skills and knowledge I have acquired. I'm also looking forward to
+          further polishing and experimenting with the website by:
+        </p>
+        <ul>
+          <li>Continue improving the images for tablet and mobile.</li>
+          <li>Further experimenting with case study layouts.</li>
+          <li>Including Google Analytics and Hotjar to gain more insigths about visitors needs and behaviours.</li>
+          <li>Designing my own layouts in Figma and developing them, to even better understadn the interaction between design and development.</li>
+        </ul>
+
+        <p>You can also check out my <span class="bold">website code</span> on <a href="https://github.com/mperfiljeva/Frontend_Project_MPerfiljeva">GitHub</a>.</p>
+      </div>
+    </div>
+
+  </main>
+  <footer id="contact">
+    <div class="container">
+      <!-- footer container -->
+      <h2>Get in touch</h2>
+      <p>
+        Do you like my work and want to discuss opportunities? Please get in touch.
+      </p>
+      <div>
+        <a href="mailto:contact@instructionaldesign.expert" class="button email">Email me</a>
+      </div>
+      <div class="social">
+        <!-- linkedin-->
+        <a href="https://www.linkedin.com/in/mperfiljeva/" target="_blank"><svg class="icon" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <g>
+                <path
+                  d="M425.619,86.346C382.172,42.9,322.258,16.066,255.965,16.066    c-66.297,0-126.212,26.834-169.65,70.279c-43.452,43.442-70.286,103.359-70.286,169.652c0,66.292,26.834,126.211,70.286,169.654    c43.438,43.447,103.353,70.281,169.65,70.281c66.293,0,126.207-26.834,169.654-70.281    c43.443-43.443,70.277-103.362,70.277-169.654C495.896,189.705,469.063,129.788,425.619,86.346z M412.332,412.365    c-39.993,40.126-95.251,64.835-156.367,64.835c-61.121,0-116.379-24.709-156.372-64.835    c-40.117-39.984-64.831-95.252-64.831-156.367c0-61.111,24.714-116.377,64.831-156.365C139.586,59.509,194.844,34.8,255.965,34.8    c61.116,0,116.374,24.709,156.367,64.833c40.121,39.988,64.831,95.254,64.831,156.365    C477.163,317.113,452.453,372.381,412.332,412.365z" />
+                <polygon points="145,258.257 145,363 198,363 198,249.621 198,218 145,218" />
+                <path
+                  d="M310.3,218.666c-21.657,0-36.269,9.334-42.378,18.334H266v-19h-39v29.627V363h44v-70.331    c0-18.87,1.816-37.066,24.938-37.066c23.242,0,23.063,21.518,23.063,38.392V363h44v-78.039c0-7.443,0.221-14.946-0.574-21.325    C359.105,236.27,347.236,218.666,310.3,218.666z" />
+                <path d="M172.931,147.722c-13.949,0-25.244,11.293-25.244,25.244c0,13.952,11.295,25.242,25.244,25.242    c13.95,0,25.24-11.29,25.24-25.242C198.17,159.015,186.88,147.722,172.931,147.722z" />
+              </g>
+            </g>
+            <g />
+          </svg></a>
+        <!--twitter-->
+        <a href="https://twitter.com/GamayunTraining" target="_blank"><svg class="icon" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <g>
+                <path
+                  d="M425.619,86.28C382.172,42.97,322.258,16.004,255.965,16.004    c-66.297,0-126.212,26.966-169.65,70.276c-43.452,43.445-70.286,103.492-70.286,169.789c0,66.156,26.834,126.212,70.286,169.65    c43.438,43.311,103.353,70.276,169.65,70.276c66.293,0,126.207-26.966,169.654-70.276c43.443-43.438,70.277-103.494,70.277-169.65    C495.896,189.772,469.063,129.726,425.619,86.28z M412.332,412.438c-39.993,39.988-95.251,64.83-156.367,64.83    c-61.121,0-116.379-24.842-156.372-64.83c-40.117-39.989-64.831-95.389-64.831-156.368c0-61.113,24.714-116.514,64.831-156.502    c39.993-39.993,95.251-64.7,156.372-64.7c61.116,0,116.374,24.707,156.367,64.7c40.121,39.988,64.831,95.389,64.831,156.502    C477.163,317.049,452.453,372.448,412.332,412.438z"
+                  style="fill-rule:evenodd;clip-rule:evenodd;" />
+                <path
+                  d="M371.813,161.608c-9.7,5.711-20.593,9.83-32.015,12.088    c-9.048-9.693-22.188-15.675-36.805-15.675c-27.634,0-50.224,22.188-50.224,49.419c0,3.987,0.672,7.709,1.467,11.298    c-41.848-1.995-78.917-21.658-103.631-51.684c-4.25,7.44-6.904,15.812-6.904,24.845c0,17.271,9.88,32.415,23.163,41.186    c-8.233-0.133-16.865-2.395-21.865-6.113c0,0.267,0,0.399,0,0.664c0,6.377,0.35,12.225,2.602,17.802    c6.119,15.549,19.646,27.236,36.519,30.558c-4.391,1.197-8.853,1.855-13.5,1.855c-3.189,0-6.484-0.397-9.546-1.061    c6.516,19.666,24.927,34.013,46.854,34.543c-17.276,13.286-38.822,21.122-62.339,21.122c-4.126,0-7.985-0.265-12.102-0.662    c22.315,13.949,48.748,22.188,77.049,22.188c78.518,0,126.765-54.341,139.38-110.803c2.267-10.093,3.082-20.058,3.082-29.889    c0-2.127,0-4.382,0-6.378c10-7.041,18.574-15.812,25.219-25.642c-8.906,3.856-18.483,6.513-28.714,7.838    C360,182.866,368.085,173.298,371.813,161.608z"
+                  style="fill-rule:evenodd;clip-rule:evenodd;" />
+              </g>
+            </g>
+            <g />
+          </svg></a>
+      </div>
+      <p>
+        &copy; Maija Perfiljeva 2019
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
