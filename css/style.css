@@ -30,7 +30,7 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
-}
+  }
 
 h1 {
   font-size: 2.75em;
@@ -51,7 +51,7 @@ h3 {
 
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /*
@@ -163,6 +163,7 @@ header {
 .image-caption {
   margin: 0;
   text-align: center;
+  background-color: #FFF;
   color: #7B7E80;
   padding: 20px 5px;
 }
@@ -207,7 +208,7 @@ header {
 
 .logo {
   max-height: 60px;
-  max-width: 171px;
+  max-width: 179px;
 }
 
 header > a {
@@ -261,7 +262,7 @@ nav > ul {
 nav > ul > li > a {
   padding: 0 1em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   background-color: #44546A !important;
   color: #FFF !important;
 }
@@ -331,7 +332,7 @@ svg.animated {
 Home Page - index.html
 */
 #hero {
-  background-color: #E5E5E5;
+  background-color: rgba(68, 84, 106, 0.05);
   color: #333;
   padding: 20px 0;
   display: inline-block;
@@ -377,19 +378,6 @@ About Me - about.html
 
 #me .button-wrapper {
   text-align: center;
-}
-
-#about-experiment img {
-  width: auto;
-}
-
-#about-experiment .row-top {
-  text-align: center;
-  min-height: 298px;
-}
-
-#about-experiment .row {
-  margin-top: 0;
 }
 
 /*
